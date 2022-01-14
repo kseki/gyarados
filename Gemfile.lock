@@ -59,6 +59,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    ast (2.4.2)
     bindex (0.8.1)
     bootsnap (1.9.1)
       msgpack (~> 1.0)
@@ -93,10 +94,15 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
+    parallel (1.21.0)
+    parser (3.1.0.0)
+      ast (~> 2.4.1)
     puma (5.5.0)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
+    rack-mini-profiler (2.3.3)
+      rack (>= 1.2.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.0.alpha2)
@@ -125,10 +131,17 @@ GEM
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
+<<<<<<< Updated upstream
       zeitwerk (~> 2.5.0.beta3)
+=======
+      zeitwerk (~> 2.5)
+    rainbow (3.1.1)
+>>>>>>> Stashed changes
     rake (13.0.6)
+    regexp_parser (2.2.0)
     reline (0.2.7)
       io-console (~> 0.5)
+<<<<<<< Updated upstream
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -136,6 +149,30 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+=======
+    rexml (3.2.5)
+    rubocop (1.24.1)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.15.1, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.15.1)
+      parser (>= 3.0.1.1)
+    rubocop-performance (1.13.1)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rails (2.13.1)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.7.0, < 2.0)
+    rubocop-rspec (2.7.0)
+      rubocop (~> 1.19)
+    ruby-progressbar (1.11.0)
+>>>>>>> Stashed changes
     sqlite3 (1.4.2)
     stimulus-rails (0.7.0)
       rails (>= 6.0.0)
@@ -146,6 +183,7 @@ GEM
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (2.1.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -165,7 +203,16 @@ DEPENDENCIES
   importmap-rails (>= 0.3.4)
   jbuilder (~> 2.7)
   puma (~> 5.0)
+<<<<<<< Updated upstream
   rails (~> 7.0.0.alpha2)
+=======
+  rack-mini-profiler (>= 2.3.3)
+  rails (~> 7.0.1)
+  rubocop
+  rubocop-performance
+  rubocop-rails
+  rubocop-rspec
+>>>>>>> Stashed changes
   sqlite3 (~> 1.4)
   stimulus-rails (>= 0.4.0)
   tailwindcss-rails (>= 0.4.3)
